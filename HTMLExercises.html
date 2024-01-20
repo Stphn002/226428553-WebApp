@@ -79,7 +79,7 @@
         <a href="#AboutUs">About Us</a>
     </nav>
     <figure>
-        <img src="https://static.wikia.nocookie.net/gensin-impact/images/8/88/Hu_Tao_Card.png/revision/latest?cb=20220725204937"  class="center">
+        <img src="https://i.redd.it/happy-birthday-hu-tao-v0-gvadtz57nybb1.jpg?width=4000&format=pjpg&auto=webp&s=79455c57cd5cbde4354d194fb6afa61a995b4511" class="center">
     </figure>
     <main>
     <form>
@@ -140,9 +140,11 @@
     <br>
     <br>
     <form name="myForm" action="'/action_page.php"
-    onsubmit="return validateForm()" method="post">
-    Name: <input type="text" name="name">
-    <input type="submit" value="Submit">
+        <label for=""username">Username:</label>
+        <input type="text" id="username" name="username" reuired pattern="[A-Za-z]{3}" title="Three letter code"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+        <input type="submit">
     </form>
 </body>
 <footer>
