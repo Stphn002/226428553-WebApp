@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Validating Webpages</title>
+    </head>
+</header>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            background-color: #855858;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17;
+        }
+
+        .topnav a:hover {
+            background-color: #a76666;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #b38574;
+            color: white;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c9a793;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]
+            [name].value;
+            if (x == "") {
+                alert("You must input your name");
+                return false;
+            }
+        }
+    </script>
+
+    <nav class="topnav">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#AboutUs">About Us</a>
+    </nav>
+    <figure>
+        <img src="https://i.redd.it/happy-birthday-hu-tao-v0-gvadtz57nybb1.jpg?width=4000&format=pjpg&auto=webp&s=79455c57cd5cbde4354d194fb6afa61a995b4511"
+            class="center">
+    </figure>
+    <main>
+        <form>
+            <label for="uname">User's Name:</label><br>
+            <input type="text" id="uname" name="uname">
+            <br>
+            <label for="pword">Password</label><br>
+            <input type="text" id="pword" name="pword">
+        </form>
+        <br>
+        <form action="/action_page.php">
+            <p>Please select your gender</p>
+            <input type="radio" id="male" name="gender" value="MALE">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="FEMALE">
+            <label for="female">Female</label>
+        </form>
+        <br>
+        <form action="/action_page.php">
+            <input type="checkbox" id="terms" name="termcondi" value="TermCondi">
+            <label for="terms">I Accept the Terms and Conditions</label>
+            <br>
+            <br>
+            <form action="/action_page.php">
+                <input type="submit" value="Submit">
+            </form>
+    </main>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+    <audio controls>
+        <source src="hutao.mp3" type="audio.mpeg">
+    </audio>
+    <br>
+    <br>
+    <video with="600" height="240" controls>
+        <source src="hutaovid.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <form name="myForm" action="'/action_page.php" <label for="username">Username:</label>
+        <input type="text" id="username" name="username" reuired pattern="[A-Za-z]{3}"
+            title="Three letter code"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+        <input type="submit">
+    </form>
+</body>
+<footer>
+</footer>
+
+</html>
