@@ -1,0 +1,11 @@
+ul,ol{
+    font-style: italic;
+    color:aqua
+}
+
+
+.intro {
+    font-size: 200%;
+    font-family: sans-serif;
+    color: aquamarine;
+}
