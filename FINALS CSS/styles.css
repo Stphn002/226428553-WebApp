@@ -1,8 +1,12 @@
 ul,ol{
     font-style: italic;
-    color:aqua
+    color:aqua;
 }
 
+.lorem {
+    font-style: italic;
+    color: blueviolet;
+}
 
 .intro {
     font-size: 200%;
